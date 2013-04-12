@@ -6,7 +6,7 @@ $location = $_GET['location'];
 $cookie = $_GET['cookie'];
 $sql = "INSERT INTO cookies (location,cookie) VALUES ('".$location."', '".$cookie."')";
 
-mysql_select_db("app_chuhades", $conn);
+mysql_select_db(SAE_MYSQL_DB, $conn);
 mysql_query($sql, $conn);
 mysql_close($conn);
 
